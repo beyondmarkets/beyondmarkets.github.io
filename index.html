@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BEYOND MARKETS — Independent Market Research</title>
+    <meta name="description" content="An independent collection of research, observations, and ideas across markets and beyond. Exploring market behavior and cross-asset dynamics through quantitative research, visual analysis, structured observation, and independent thought." />
+    <meta property="og:title" content="BEYOND MARKETS — Independent Market Research" />
+    <meta property="og:description" content="An independent collection of research, observations, and ideas across markets and beyond. Exploring market behavior and cross-asset dynamics through quantitative research, visual analysis, structured observation, and independent thought." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Google Fonts with local system fallbacks -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
+
+    <!-- Strictly Relative CSS Path for offline & GitHub Pages support -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- Top Bar Navigation Contract -->
+    <header class="site-header">
+      <div class="container nav-wrapper">
+        <!-- Zone 1: Brand & Subtitle -->
+        <div class="brand-zone">
+          <a href="#home" class="brand-title">BEYOND MARKETS</a>
+          <span class="brand-subtitle">FX · Options · Cross-Asset</span>
+        </div>
+
+        <!-- Zone 2: Primary Inquiry Pillars -->
+        <nav>
+          <ul class="nav-links">
+            <li class="nav-item"><a href="#home">Home</a></li>
+            <li class="nav-item"><a href="#research">Research</a></li>
+            <li class="nav-item"><a href="#build">Build</a></li>
+            <li class="nav-item"><a href="#think">Think</a></li>
+            <li class="nav-item"><a href="#about">About</a></li>
+          </ul>
+        </nav>
+
+        <!-- Zone 3: Quick Search Tool -->
+        <div class="nav-actions">
+          <button class="btn-search font-mono" id="btn-nav-search" title="Search Publications (⌘K)">
+            <span>Search</span>
+            <span class="kbd-badge font-mono">⌘K</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main View Mount Point -->
+    <main id="app-main"></main>
+
+    <!-- Site Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <div class="footer-brand">BEYOND MARKETS</div>
+            <p class="footer-desc">
+              An independent collection of research, observations, and ideas across markets and beyond.
+            </p>
+          </div>
+          <div>
+            <div class="footer-col-title">Primary Pillars</div>
+            <ul class="footer-links">
+              <li><a href="#research">What I Research</a></li>
+              <li><a href="#build">What I Build</a></li>
+              <li><a href="#think">What I Think</a></li>
+              <li><a href="#about">About</a></li>
+            </ul>
+          </div>
+          <div>
+            <div class="footer-col-title">Correspondence</div>
+            <p style="font-size:0.8rem; color:var(--text-secondary); line-height:1.5;">
+              For research inquiries, market discussions, feedback on published work, or intellectual exchange:
+            </p>
+            <a href="mailto:xiaohehazel@gmail.com" class="font-mono" style="font-size:0.82rem; color:var(--accent-terracotta); text-decoration:underline; display:inline-block; margin-top:6px;">
+              xiaohehazel@gmail.com
+            </a>
+            <p style="font-size:0.75rem; color:var(--text-muted); margin-top:8px;">
+              “From reality to model. From model to edge.”
+            </p>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <span>&copy; 2026 BEYOND MARKETS. All research outputs and notes reserved.</span>
+          <span>Contact: <a href="mailto:xiaohehazel@gmail.com" style="text-decoration:underline;">xiaohehazel@gmail.com</a></span>
+          <span>Independent Market Research, Visualizations & Notes</span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Search Modal (⌘K) -->
+    <div class="modal-overlay" id="search-modal">
+      <div class="modal-box">
+        <div class="modal-header">
+          <span class="modal-title">Search Research & Publications</span>
+          <button class="btn-modal-close" onclick="closeSearchModal()">✕</button>
+        </div>
+        <div class="modal-body">
+          <div class="search-input-box">
+            <input type="text" id="global-search-input" class="search-input" placeholder="Search by title, asset class, topic, keyword..." autocomplete="off" />
+          </div>
+          <div class="search-results-list" id="search-results-list"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Core Scripts (Strictly Relative Paths, Zero Dependencies) -->
+    <script src="./js/markdown.js"></script>
+    <script src="./js/charts.js"></script>
+    <script src="./js/txo-explorer.js"></script>
+    <script src="./js/dashboard.js"></script>
+    <script src="./js/app.js"></script>
+
+    <!-- Content Registries (Works on file:/// double-click and on GitHub Pages) -->
+    <script src="./research/where-strategies-work-asset-classes.js"></script>
+    <script src="./research/where-strategies-work-fx.js"></script>
+    <script src="./research/where-strategies-work-equity-indices.js"></script>
+    <script src="./research/where-strategies-work-duration.js"></script>
+    <script src="./build/txo-volatility-explorer.js"></script>
+    <script src="./build/txo-options-statistics.js"></script>
+    <script src="./build/rates-dashboard.js"></script>
+    <script src="./think/front-of-the-class.js"></script>
+  </body>
+</html>
